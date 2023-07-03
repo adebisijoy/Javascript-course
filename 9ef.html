@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      placeholder="Name"
+      class="js-input-name"
+      value="Destiny"
+      onkeydown="
+    handlenameKeydown(event);
+    "
+    />
+
+    <button
+      onclick="
+    const inputElement = document.querySelector('.js-input-name');
+    document.querySelector('.js-info')
+    .innerHTML = `Your name is: ${inputElement.value}`;
+  "
+    >
+      Submit
+    </button>
+
+    <p class="js-info"></p>
+
+    <script>
+      function handlenameKeydown(event) {
+        if (event.key === "Enter") {
+          const inputElement = document.querySelector(".js-input-name");
+          document.querySelector(
+            ".js-info"
+          ).innerHTML = `Your name is: ${inputElement.value}`;
+        }
+      }
+    </script>
+  </body>
+</html>

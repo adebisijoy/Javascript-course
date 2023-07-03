@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let day = 'sunday' ;
+    let price = 0;
+    const weekendPrice = 400;
+    const weekDayPrice = 500;
+
+    if (day == "monday") {
+      price = weekDayPrice;
+    } else if (day == "tuesday"){
+      price = weekDayPrice;
+    } else if (day == "wednesday"){
+      price = weekDayPrice;
+    } else if (day == "thursday"){
+      price = weekDayPrice;
+    } else if (day == "friday"){
+      price = weekDayPrice;
+    } else if (day == "saturday"){
+      price = weekendPrice;
+    } else if (day == "sunday"){
+      price = weekendPrice;
+    }
+    
+    
+    console.log(price)
+     
+    let postcost = 50;
+
+    if (postcost <= 50) {
+       console.log(`Total cost: ${1000}`);
+    } else if (postcost >= 100) {
+      console.log(`Total cost: ${1500}`);
+    } else if (postcost > 50 && postcost < 100) {
+      console.log(`Totalcost: ${1200}`);
+    }
+  
+  </script>
+</body>
+</html>
